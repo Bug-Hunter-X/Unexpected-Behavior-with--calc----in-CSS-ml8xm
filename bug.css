@@ -1,0 +1,7 @@
+The CSS property `calc()` is used incorrectly, resulting in unexpected layout or rendering issues.  For example, using `calc(100% - 10px)` inside a flexbox item without specifying `width` can cause unexpected behavior. Another example is incorrectly using `calc()` with units, leading to errors. 
+```css
+div {
+  width: calc(100% - 10px); /* Incorrect usage inside flexbox if width is not also set */
+  height: calc(200px + 10%); /* Missing unit on 10% */
+}
+```
