@@ -1,0 +1,8 @@
+The corrected CSS avoids the pitfalls demonstrated in the original code.  Proper unit handling and explicit width definitions within the flexbox ensure predictable layout. 
+```css
+div {
+  width: 50%; /* Explicit width declaration */
+  width: calc(50% - 10px); /* Correct usage, width explicitly defined */
+  height: calc(200px + 10%); /* Correct unit usage */
+}
+```
